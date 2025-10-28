@@ -1,10 +1,10 @@
-print("Program mengurutkan data")
+import random
 
-n1 = int(input("Bilangan ke-1: "))
-n2 = int(input("Bilangan ke-2: "))
-n3 = int(input("Bilangan ke-3: "))
+n = int(input("Masukkan jumlah n: "))
+count = 0
 
-data = [n1, n2, n3]
-data.sort()
-
-print("Urutan bilangan:", data)
+while count < n:
+    angka = random.random()  # menghasilkan angka dari 0 sampai <1
+    if angka < 0.5:
+        print(angka)
+        count += 1

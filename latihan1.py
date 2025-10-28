@@ -1,16 +1,6 @@
-print("Menentukan bilangan terbesar dari 4 bilangan")
+# Latihan 1 - Perulangan bertingkat
 
-a = int(input("Masukkan bilangan ke-1: "))
-b = int(input("Masukkan bilangan ke-2: "))
-c = int(input("Masukkan bilangan ke-3: "))
-d = int(input("Masukkan bilangan ke-4: "))
-
-maks = a
-if b > maks:
-    maks = b
-if c > maks:
-    maks = c
-if d > maks:
-    maks = d
-
-print("Bilangan terbesar adalah:", maks)
+for i in range(10):          # baris (0 sampai 9)
+    for j in range(10):      # kolom (0 sampai 9)
+        print(i + j, end=" ")  # jumlahkan i + j dan tampilkan di baris yang sama
+    print()  # pindah ke baris berikutnya
